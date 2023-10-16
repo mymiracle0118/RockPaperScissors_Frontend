@@ -1,0 +1,192 @@
+body{
+	font-family: "Comic Sans MS" !important;
+}
+
+.content{
+	min-height: calc(100vh - 40px);
+	background-color: #F1FAEE;
+	display : flex;
+	flex-direction: column;
+	align-items : center;
+	width : 100%;
+
+	.header{
+		padding-top: 30px;
+		color : #457B9D;
+		
+		h3{
+			color : #457B9D;
+			font-size : 36px;
+			padding : 0px;
+			margin : 0px;
+		}
+
+		p{
+			padding : 0px;
+			margin : 0px
+		}
+
+		button{
+			float : right;
+			font-size : 12px;
+			margin-right : 30px;
+		}
+	}
+
+	.name-wager{
+		padding-top : 80px;
+		max-width: 500px;
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 15px;
+			box-sizing: border-box;
+			text-align : center;
+			font-size : 20px;
+			font-weight : bold;
+		}
+	}
+
+	.waiting-room{
+		padding-top : 20vh;
+	}
+
+	.invite-panel{
+		padding-top : 20vh;
+		
+	}
+
+	.btn-mystery{
+		border: 0px solid #000;
+		height : 50px;
+		max-width : 200px;
+		width : 80%;
+		border-radius: 15px;
+		color : white;
+		background-color: #172941;
+		font-size : 16px;
+		&:hover{
+			background-color: #0a0d11;
+		}
+	}
+
+	.btn-invite{
+		border: 0px solid #000;
+		height : 50px;
+		max-width : 200px;
+		width : 80%;
+		border-radius: 15px;
+		color : white;
+		background-color: #c02828;
+		font-size: 16px;
+		&:hover{
+			background-color: #e71d1d;
+		}
+	}
+
+	.select-group{
+		button{
+			margin-bottom: 30px;
+			min-height : 50px;
+			width : 80%;
+			font-size : 20px;
+			border-radius: 15px;			
+			&.active, &hover{
+				background-color: #457B9D;
+			}
+		}
+	}
+	.select-rps{
+		width : 70%;
+		button{
+			height : 50px;
+			min-width : 100px;
+			width : 80%;
+			font-size : 20px;
+			margin-bottom : 10px;
+			border-radius: 15px;			
+			&.active, &hover{
+				background-color: #457B9D;
+			}
+		}
+	}
+}
+
+.invalid-input{
+	outline-color: red !important;
+	border-color: red !important;
+}
+
+.setting-panel{
+	padding : 0 16px;
+	.setting-title{
+		padding-left: 20px;
+		font-size : 16px;	
+	}
+	.setting-group{
+		position : relative;
+
+		.setting-input{
+			background: white;
+			color : #000;
+			width: 100%;
+			padding: 12px 24px 12px;
+			font-size: 20px;
+			font-weight: 700;
+			text-align: right;
+			border-radius: 20px;
+			border: 1px solid #000;
+			text-align: left;
+			margin-bottom: 8px;			
+		}
+		.setting-input::-webkit-inner-spin-button,
+		.setting-input::-webkit-outer-spin-button{
+			-webkit-appearance: none;
+			margin : 0;
+		}
+		.setting-input[type="number"]{
+			-moz-appearance: textfield;
+		}
+		.setting-input::placeholder{
+			color : #b2b9d2
+		}
+		.setting-button{
+			position : absolute;
+			background-color: #172941;
+			top : 8px;
+			right:10px;
+			font-size : 16px;
+			font-weight:700;
+			color : #ddd;
+			width : 100px;
+			height : 40px;
+			border : 0px solid #000;
+			border-radius: 15px;
+			
+			&:hover{
+				background-color: #0a0d11;
+			}
+		}
+
+		.withdraw-button{
+			background-color: #762727 !important;
+
+			&:hover{
+				background-color: #b61919 !important;
+			}
+		}
+	}
+}
+
+.footer{
+	padding : 0px;
+	margin : 0px;
+	height : 40px;
+	color : #7a7a7a;
+	font-size : 12px;
+	font-weight : 400;
+	font-family : "industry-black";
+}
